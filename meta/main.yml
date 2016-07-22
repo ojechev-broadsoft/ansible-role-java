@@ -26,6 +26,9 @@ galaxy_info:
     - name: FreeBSD
       versions:
       - 10.2
+    - name: Darwin
+      versions:
+      - 10.11.6
   galaxy_tags:
     - development
     - system
