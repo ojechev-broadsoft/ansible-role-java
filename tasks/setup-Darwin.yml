@@ -1,9 +1,7 @@
 ---
-- name: Tap caskroom versions
-  become_user: "{{ remote_user }}"
-  shell: "brew tap caskroom/versions"
+- name: Fetch Java versions
+  homebrew_tap: name=adoptopenjdk/openjdk
 
 - name: Install Java
-  homebrew_cask: name={{java_version}}
-  state: present
+  homebrew_cask: name={{java_version}} state=present
 
